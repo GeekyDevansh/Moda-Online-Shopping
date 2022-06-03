@@ -6,6 +6,7 @@ import Styles from '../styles/Cart.module.css'
 import arrow from '../public/black-arrow.png'
 import getStripe from '../lib/getStripe';
 import {toast} from 'react-hot-toast';
+import Image from 'next/image'
 
 
 const Cart = () => {
