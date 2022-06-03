@@ -4,6 +4,9 @@ const nextConfig = {
   devIndicators: {
     buildActivity: false
 },
+images: {
+  domains: ["cdn.sanity.io"],
+},
 }
 
 module.exports = nextConfig

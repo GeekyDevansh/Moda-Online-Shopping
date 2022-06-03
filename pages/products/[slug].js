@@ -4,9 +4,10 @@ import { urlFor } from '../../lib/client'
 import Styles from '../../styles/Product.module.css'
 import { useStateContext } from '../../context/StateContext'
 import Link from 'next/link'
+import Image from 'next/image'
 
-const productDetails = ({product}) => {
-  const {onAdd,qty,setQty,setCartItems,cartItems} = useStateContext();
+const ProductDetails = ({product}) => {
+  const {onAdd,qty} = useStateContext();
 
  
 
@@ -16,7 +17,7 @@ const productDetails = ({product}) => {
 <div className={Styles.container} >
 
       <div>
-        <img src = {urlFor(product.image)} alt='img' width={616} height={914} className={Styles.img} />
+        <Image src = {urlFor(product.image)} alt='img' width={616} height={914} className={Styles.img} />
 
       </div>
       <div>
@@ -91,4 +92,4 @@ export const getStaticProps = async ({ params: { slug }}) => {
 
 
 
-export default productDetails
+export default ProductDetails

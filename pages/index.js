@@ -7,13 +7,35 @@ import { client } from "../lib/client";
 import { urlFor } from "../lib/client";
 import arrow from "../public/black-arrow.png";
 import Link from "next/link";
-import { useStateContext } from "../context/StateContext";
+import { useNextSanityImage } from 'next-sanity-image';
+import sanityClient from '@sanity/client';
+
+
+const configuredSanityClient = sanityClient({
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
+  useCdn: true
+});
 
 const index = ({ products }) => {
   const product = products[0];
   const product1 = products[1];
   const product2 = products[2];
-  const { onAdd, qty } = useStateContext();
+
+  const imageProps1 = useNextSanityImage(
+		configuredSanityClient,
+		products[0].image
+	);
+  const imageProps2 = useNextSanityImage(
+		configuredSanityClient,
+		products[1].image
+	);
+  const imageProps3 = useNextSanityImage(
+		configuredSanityClient,
+		products[2].image
+	);
+  
+  
 
   return (
     <>
@@ -22,7 +44,7 @@ const index = ({ products }) => {
       </Head>
 
       <div className={Styles.container}>
-        <Image src={hp_1} data-aos="fade-in" data-aos-duration="1000" />
+        <Image src={hp_1} alt='img' data-aos="fade-in" data-aos-duration="1000" />
         <div
           className={Styles.brand}
           data-aos="fade-up"
@@ -50,7 +72,7 @@ const index = ({ products }) => {
       </div>
 
       <div className={Styles.container2} data-aos="fade-up">
-        "Style is a way to say who you are without having to speak." — Rachel
+      &quot;Style is a way to say who you are without having to speak.&quot; — Rachel
         Zoe
       </div>
 
@@ -73,8 +95,8 @@ const index = ({ products }) => {
           data-aos-duration="1000"
         >
           {product.image && (
-            <img
-              src={urlFor(product.image)}
+            <Image
+              {...imageProps1}
               alt="img"
               width={400}
               height={550}
@@ -91,8 +113,8 @@ const index = ({ products }) => {
           data-aos-duration="1000"
         >
           {product1.image && (
-            <img
-              src={urlFor(product1.image)}
+            <Image
+              {...imageProps2}
               alt="img"
               width={400}
               height={550}
@@ -133,8 +155,8 @@ const index = ({ products }) => {
           data-aos-duration="1000"
         >
           {product2.image && (
-            <img
-              src={urlFor(product2.image)}
+            <Image
+              {...imageProps3}
               alt="img"
               width={400}
               height={550}
@@ -145,11 +167,13 @@ const index = ({ products }) => {
       </div>
 
       <div className={Styles.end} data-aos="fade-up" data-aos-duration="1000">
-        <a href="/products">
+        <Link href='/products' >
+        <a>
           {" "}
           EXPLORE MORE STYLES{" "}
           <Image src={arrow} alt="arrow" width={27} height={21} />{" "}
         </a>
+        </Link>
       </div>
     </>
   );

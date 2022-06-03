@@ -3,6 +3,7 @@ import { urlFor } from '../../lib/client'
 import Link from 'next/link'
 import {client} from '../../lib/client'
 import Styles from '../../styles/Products.module.css'
+import Image from 'next/image'
 
 const index = ({product_list}) => {
  
@@ -19,7 +20,7 @@ const index = ({product_list}) => {
           <div className={Styles.item} >
           {product.image && 
           
-          <img src={urlFor(product.image)} alt="img" width={350} height={500} className={Styles.img} />
+          <Image src={urlFor(product.image)} alt="img" width={350} height={500} className={Styles.img} />
         }
           <div className={Styles.details} >
           <p>{product.name}</p>

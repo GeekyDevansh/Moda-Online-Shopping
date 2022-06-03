@@ -56,7 +56,7 @@ const handleCheckout = async () => {
        {cartItems.map((item)=>(
          <div key={item._id} >
  <div className={Styles.cartitem} >
-           <img src={urlFor(item.image)} alt="img"  width={123.2} height={182.8} />
+           <Image src={urlFor(item.image)} alt="img"  width={123.2} height={182.8} />
 
            <div>
              <h3> {item.name} </h3>
