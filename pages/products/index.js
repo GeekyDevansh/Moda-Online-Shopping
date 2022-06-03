@@ -5,8 +5,11 @@ import {client} from '../../lib/client'
 import Styles from '../../styles/Products.module.css'
 import Image from 'next/image'
 
-const index = ({product_list}) => {
+
+const Index = ({product_list}) => {
  
+ 
+
   return (
     <div className={Styles.maincontainer} >
       {product_list.map((product)=>{
@@ -20,8 +23,9 @@ const index = ({product_list}) => {
           <div className={Styles.item} >
           {product.image && 
           
-          <Image src={urlFor(product.image)} alt="img" width={350} height={500} className={Styles.img} />
+          <Image src={urlFor(product.image)} alt="img" width={350} height={500} className={Styles.img} unoptimized={true} />
         }
+          
           <div className={Styles.details} >
           <p>{product.name}</p>
           <p>${product.price}.00</p>
@@ -53,4 +57,4 @@ export const getServerSideProps = async ()=>{
 
 }
 
-export default index
+export default Index
