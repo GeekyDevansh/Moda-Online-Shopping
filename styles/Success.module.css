@@ -1,8 +1,14 @@
 .success{
     font-family: 'Montserrat',sans-serif;
     text-align: center;
-    font-size: 2.813em;
-    padding: 12.5em;
+    font-size: 50px;
+    padding: 100px;
     background-color: #caafa8;
     color: white;
+}
+@media(max-width:768px)
+{
+    .success{
+        font-size: 25px;
+    }
 }
