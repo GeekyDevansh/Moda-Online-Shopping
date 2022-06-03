@@ -4,7 +4,6 @@ import {useStateContext} from '../context/StateContext'
 import { urlFor } from '../lib/client';
 import Styles from '../styles/Cart.module.css'
 import arrow from '../public/black-arrow.png'
-import Image from 'next/image'
 import getStripe from '../lib/getStripe';
 import {toast} from 'react-hot-toast';
 
@@ -56,7 +55,7 @@ const handleCheckout = async () => {
        {cartItems.map((item)=>(
          <div key={item._id} >
  <div className={Styles.cartitem} >
-           <Image src={urlFor(item.image)} alt="img"  width={123.2} height={182.8} />
+           <img src={urlFor(item.image)} alt="img"  width={123.2} height={182.8} />
 
            <div>
              <h3> {item.name} </h3>
@@ -97,7 +96,7 @@ const handleCheckout = async () => {
     </div>
     <Link href='/products' >
       <p className={Styles.text3} >
-         Continue Shopping <Image src={arrow} alt="arrow" width={20} height={20} />
+         Continue Shopping <img src={arrow} alt="arrow" width={20} height={20} />
        </p>
     </Link>
     

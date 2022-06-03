@@ -17,7 +17,7 @@ const ProductDetails = ({product}) => {
 <div className={Styles.container} >
 
       <div>
-        <Image src = {urlFor(product.image)} alt='img' width={616} height={914} className={Styles.img} />
+        <img src = {urlFor(product.image)} alt='img' width={616} height={914} className={Styles.img} />
 
       </div>
       <div>
