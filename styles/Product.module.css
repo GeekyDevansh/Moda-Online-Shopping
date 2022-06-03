@@ -1,0 +1,51 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 6.25em;
+    flex-wrap: wrap;
+    background-color: #caafa8;
+    color: white;
+    font-family: 'Montserrat',sans-serif;
+    /* align-items: center; */
+    padding: 2.813em;
+    font-weight: 900;
+}
+.heading1{
+    font-family: 'Chloe';
+    font-size: 2.813em;
+}
+.cart{
+
+    border: 0.125em solid white;
+    cursor: pointer;
+    color: white;
+    background-color: #caafa8;
+    padding: 0.625em 1.563em;
+    width: 100%;
+    margin: 0.625em;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 900;
+
+}
+.buynow{
+    border: 0.125em solid white;
+    cursor: pointer;
+    color: #caafa8;
+    background-color:white ;
+    padding: 0.625em 1.563em;
+    width: 100%;
+    margin: 0.625em;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 900;
+}
+@media(max-width:768px)
+{
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .img{
+        width: 307.5px;
+        height: 457px;
+    }
+}

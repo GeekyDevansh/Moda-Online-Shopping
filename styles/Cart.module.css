@@ -1,0 +1,105 @@
+.cart{
+
+    margin: 6.25em;
+    font-family: 'Montserrat',sans-serif;
+
+
+}
+
+.cartitem{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0.625em;
+    font-size: 1.25em;
+}
+.text{
+    text-align: center;
+    font-family: 'Chloe';
+    font-size: 2.188em;
+}
+.text3{
+    text-align: center;
+    font-family: 'Chloe';
+    font-size: 2.188em;
+    cursor: pointer;
+    margin-top: 6.25em;
+}
+.btn{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding:15px;
+    font-size: 1.25em;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 800;
+}
+.text1{
+    font-weight: 800;
+    font-size: 1.125em;
+}
+.subtotal{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    font-weight: 800;
+    font-size: 1.563em;
+    justify-items: center;
+    padding-top: 6.25em;
+}
+.qty{
+    font-size: 1em;
+}
+.btn1{
+    padding: 0.938em 5.625em;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.625em;
+    /* color: #caafa8; */
+    /* background-color: #caafa8; */
+    font-size: 1.375em;
+    /* background-color: white; */
+
+
+}
+.btnc{
+    position: absolute;
+    right: 10%;
+    
+}
+.text2{
+    font-family: 'Montserrat',sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.188em;
+    padding-top: 6.25em;
+}
+.cross{
+    font-family: 'Montserrat',sans-serif;
+    border: none;
+    background-color: white;
+}
+@media(max-width:768px)
+{
+    .cartitem{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .text1{
+        font-size: 15px;
+
+    }
+    .btn{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .btnc{
+        right: 1%;
+        left: 1%;
+    }
+    .subtotal{
+        font-size: 20px;
+    }
+}

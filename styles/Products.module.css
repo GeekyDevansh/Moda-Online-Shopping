@@ -1,0 +1,32 @@
+.maincontainer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3.125em;
+    justify-content: space-between;
+    background-color: #caafa8;
+    color: white;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 900;
+}
+.item{
+    cursor: pointer;
+    padding-bottom: 3.125em;
+}
+
+.img:hover {
+    
+
+        -webkit-filter: blur(1px);
+        filter: blur(1px);
+        transition-duration: 0.5s;
+    
+}
+.details{
+    text-align: center;
+    
+}
+@media (max-width:768px){
+    .maincontainer{
+        padding:50px 10px 10px 20px;
+    }
+}

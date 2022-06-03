@@ -1,0 +1,75 @@
+@font-face {
+    font-family: Chloe;
+    src: url(../Font/Chloe-Regular.otf);
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+.container{
+    background-color: #caafa8;
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    padding: 0.625em;
+}
+.ul{
+    list-style: none;
+    display: flex;
+    margin-right: 3.125em;
+  
+
+}
+.link{
+    
+    margin: 0 auto;
+    padding-right: 6.25em;
+}
+.links{
+    padding: 0.469em 1.25em;
+    font-size: 0.781em;
+    font-family:'Montserrat', sans-serif;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 0.125em;
+}
+
+.moda{
+    padding-left: 0.5em;
+    font-family: 'Chloe';
+    font-size: 3.125em;
+    color: white;
+    font-weight: 900;
+    
+}
+.cart{
+    padding-right: 1.25em;
+    color: white;
+    cursor: pointer;
+}
+.links:hover{
+    font-weight: bold;
+}
+
+@media (max-width:768px)
+{
+    .moda{
+        font-size: 25px;
+        padding: 0;
+    }
+    .link{
+        padding: 0;
+    }
+    .links{
+        padding-left: 15px;
+        font-size: 9px;
+    }
+    .cart{
+       
+            padding: 0;
+    }
+    .container{
+        padding: 5px;
+    }
+}
+
+
+
