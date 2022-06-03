@@ -17,7 +17,7 @@ const configuredSanityClient = sanityClient({
   useCdn: true
 });
 
-const index = ({ products }) => {
+const Index = ({ products }) => {
   const product = products[0];
   const product1 = products[1];
   const product2 = products[2];
@@ -190,4 +190,4 @@ export const getServerSideProps = async () => {
   };
 };
 
-export default index;
+export default Index;
