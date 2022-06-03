@@ -96,7 +96,7 @@ const handleCheckout = async () => {
     </div>
     <Link href='/products' >
       <p className={Styles.text3} >
-         Continue Shopping <img src={arrow} alt="arrow" width={20} height={20} />
+         Continue Shopping <Image src={arrow} alt="arrow" width={20} height={20} />
        </p>
     </Link>
     
