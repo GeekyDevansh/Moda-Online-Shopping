@@ -59,16 +59,17 @@
         padding: 0;
     }
     .links{
-        padding-left: 15px;
+        padding:0 0 0 15px;
         font-size: 9px;
         font-weight: 600;
     }
     .cart{
        
-            padding: 0;
+            padding: 0 10px 0 0;
+        
     }
     .container{
-        padding: 5px;
+        padding: 15px;
     }
 }
 
