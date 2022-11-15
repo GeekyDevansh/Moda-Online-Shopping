@@ -62,8 +62,7 @@ position: relative;
     font-size: 1.25em;
 }
 .image{
-    align-self: center;
-    padding: 6.25em;
+        padding: 6.25em 0em 0em 10em;
    
 }
 .container4{
@@ -81,8 +80,7 @@ position: relative;
     font-size: 1.25em;
 }
 .image1{
-    align-self: center;
-    padding: 6.25em;
+    padding: 6.25em 0em 0em 10em;
 }
 .heading{
     font-family: 'Chloe';
@@ -96,8 +94,7 @@ position: relative;
     text-align: center;
 }
 .image2{
-    align-self: center;
-    padding: 6.25em;
+    padding: 6.25em 0em 6.25em 10em;
 }
 .cart{
 
@@ -143,13 +140,13 @@ position: relative;
         flex-wrap: wrap;
     }
     .image{
-       padding: 20px 0 100px 0;
+       padding: 100px 20px 0px 20px;
     }
     .image1{
-        padding: 100px 0 20px 0;
+        padding: 100px 20px 0px 20px;
      }
      .image2{
-        padding: 20px 0 0 0;
+        padding: 100px 20px 0px 20px;
      }
      .end{
         padding: 100px 0 100px 0;

@@ -77,18 +77,7 @@ const Index = ({ products }) => {
       </div>
 
       <div className={Styles.container3}>
-        <div
-          className={Styles.text}
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <h1 className={Styles.heading}> {product.name} </h1>$ {product.price}
-          .00
-          <p> {product.description} </p>
-          <Link href="/products">
-            <button className={Styles.btn1}> Shop Now </button>
-          </Link>
-        </div>
+        
         <div
           className={Styles.image}
           data-aos="fade-in"
@@ -103,6 +92,18 @@ const Index = ({ products }) => {
               
             />
           )}
+        </div>
+        <div
+          className={Styles.text}
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <h1 className={Styles.heading}> {product.name} </h1>$ {product.price}
+          .00
+          <p> {product.description} </p>
+          <Link href="/products">
+            <button className={Styles.btn1}> Shop Now </button>
+          </Link>
         </div>
       </div>
 
@@ -137,18 +138,7 @@ const Index = ({ products }) => {
       </div>
 
       <div className={Styles.container4}>
-        <div
-          className={Styles.text}
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <h1 className={Styles.heading}> {product2.name} </h1>${" "}
-          {product2.price}.00
-          <p> {product2.description} </p>
-          <Link href="/products">
-            <button className={Styles.btn1}> Shop Now </button>
-          </Link>
-        </div>
+        
         <div
           className={Styles.image2}
           data-aos="fade-in"
@@ -163,6 +153,18 @@ const Index = ({ products }) => {
               
             />
           )}
+        </div>
+        <div
+          className={Styles.text}
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <h1 className={Styles.heading}> {product2.name} </h1>${" "}
+          {product2.price}.00
+          <p> {product2.description} </p>
+          <Link href="/products">
+            <button className={Styles.btn1}> Shop Now </button>
+          </Link>
         </div>
       </div>
 

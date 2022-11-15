@@ -16,11 +16,11 @@ const ProductDetails = ({product}) => {
    
 <div className={Styles.container} >
 
-      <div>
+      <div className={Styles.image} >
         <img src = {urlFor(product.image)} alt='img' width={616} height={914} className={Styles.img} />
 
       </div>
-      <div>
+      <div className={Styles.text} >
         <h1 className={Styles.heading1} >
           {product.name}
         </h1>
