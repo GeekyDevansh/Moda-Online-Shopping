@@ -4,10 +4,14 @@ import Image from 'next/image'
 import image from '../icons/icons8-shopping-bag-50.png'
 import {useStateContext} from '../context/StateContext'
 import Link from 'next/link'
+import {useRouter} from 'next/router';
 
 
 
 const Navbar = () => {
+
+    const router = useRouter();
+    console.log(router);
 
   const {totalQuantities} = useStateContext();
 
@@ -27,17 +31,17 @@ const Navbar = () => {
     <ul className={Styles.ul} >
         <li className={Styles.links}> 
         <Link href='/products' > 
-        <a> SHOP </a> 
+        <a style={{fontWeight: router.pathname=='/products' ? '900' : '100'}} > SHOP </a> 
         </Link>
         </li>
         <li className={Styles.links}> 
         <Link href='/about' > 
-        <a > ABOUT US </a> 
+        <a style={{fontWeight: router.pathname=='/about' ? '900' : '100'}} > ABOUT US </a> 
         </Link>
         </li>
         <li className={Styles.links}> 
         <Link href='/locate' >
-           <a> LOCATE A STORE </a>
+           <a style={{fontWeight: router.pathname=='/locate' ? '900' : '100'}} > LOCATE A STORE </a>
             </Link>
         </li>
     </ul>
