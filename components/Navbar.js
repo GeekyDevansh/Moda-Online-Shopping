@@ -49,11 +49,14 @@ const Navbar = () => {
 
     <div className={Styles.cart}>
         <Link href="/cart">
-<a >
+<div className={Styles.bag} >
 
         <Image src={image} alt='shopping bag' width={20} height={20} />
+        <div className={Styles.count} >
+
         {totalQuantities}
-</a>
+        </div>
+</div>
         </Link>
 
    

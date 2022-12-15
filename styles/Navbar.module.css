@@ -48,6 +48,16 @@
 .links:hover{
     font-weight: bold;
 }
+.bag{
+    position: relative;
+    padding: 10px;
+}
+.count{
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
 
 @media (max-width:768px)
 {
@@ -69,6 +79,16 @@
     }
     .container{
         padding: 15px;
+    }
+    .bag{
+        position: relative;
+        /* padding: 10px; */
+    }
+    .count{
+        position: absolute;
+        top: 0;
+        right: 0;
+        
     }
 }
 
