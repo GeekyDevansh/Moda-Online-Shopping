@@ -83,6 +83,9 @@
         font-size: 9px;
         font-weight: 900;
     }
+    .links:hover{
+        font-weight: 600;
+    }
     .cart{
        
             padding: 0 10px 0 0;
