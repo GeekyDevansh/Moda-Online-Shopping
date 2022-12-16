@@ -52,10 +52,11 @@ const Navbar = () => {
 <div className={Styles.bag} >
 
         <Image src={image} alt='shopping bag' width={20} height={20} />
-        <div className={Styles.count} >
+        {totalQuantities>0 && ( <div className={Styles.count} >
 
-        {totalQuantities}
-        </div>
+{totalQuantities}
+</div>)}
+       
 </div>
         </Link>
 
