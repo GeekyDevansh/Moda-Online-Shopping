@@ -28,7 +28,7 @@
     font-size: 0.781em;
     font-family:'Montserrat', sans-serif;
     color: white;
-    font-weight: 100;
+    font-weight: 600;
     letter-spacing: 0.125em;
 }
 
@@ -38,7 +38,6 @@
     font-size: 3.125em;
     color: white;
     font-weight: 900;
-    
 }
 .cart{
     padding-right: 1.25em;
@@ -46,7 +45,7 @@
     cursor: pointer;
 }
 .links:hover{
-    font-weight: bold;
+    font-weight: 100;
 }
 .bag{
     position: relative;
@@ -82,7 +81,7 @@
     .links{
         padding:0 0 0 15px;
         font-size: 9px;
-        font-weight: 600;
+        font-weight: 900;
     }
     .cart{
        
@@ -99,8 +98,8 @@
         position: absolute;
         top: 0;
         right: -2px;
-        height: 10px;
-    width: 10px;
+        height: 12px;
+    width: 12px;
     font-size: 9px;
     }
 }

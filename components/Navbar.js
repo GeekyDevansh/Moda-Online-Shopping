@@ -31,17 +31,17 @@ const Navbar = () => {
     <ul className={Styles.ul} >
         <li className={Styles.links}> 
         <Link href='/products' > 
-        <a style={{fontWeight: router.pathname=='/products' ? '900' : '100'}} > SHOP </a> 
+        <a style={{borderBottomStyle: router.pathname=='/products' ? 'solid' : 'none',borderBottomWidth: router.pathname=='/products' ? '1px' : '0px' }} > SHOP </a> 
         </Link>
         </li>
         <li className={Styles.links}> 
         <Link href='/about' > 
-        <a style={{fontWeight: router.pathname=='/about' ? '900' : '100'}} > ABOUT US </a> 
+        <a style={{borderBottomStyle: router.pathname=='/about' ? 'solid' : 'none',borderBottomWidth: router.pathname=='/about' ? '1px' : '0px' }}> ABOUT US </a> 
         </Link>
         </li>
         <li className={Styles.links}> 
         <Link href='/locate' >
-           <a style={{fontWeight: router.pathname=='/locate' ? '900' : '100'}} > LOCATE A STORE </a>
+           <a style={{borderBottomStyle: router.pathname=='/locate' ? 'solid' : 'none',borderBottomWidth: router.pathname=='/locate' ? '1px' : '0px' }}> LOCATE A STORE </a>
             </Link>
         </li>
     </ul>
