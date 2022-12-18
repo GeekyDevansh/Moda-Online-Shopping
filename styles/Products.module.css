@@ -33,9 +33,12 @@
 }
 @media (max-width:768px){
     .maincontainer{
-        display:inline-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        padding:50px 10px 10px 20px;
+        padding: 0px;
     }
     .details{
         display:flex;
@@ -43,5 +46,6 @@
         align-items: center;
         justify-content: center;
     }
+    
     
 }
