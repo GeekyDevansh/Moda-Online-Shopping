@@ -25,9 +25,9 @@ const ProductDetails = ({product}) => {
           {product.name}
         </h1>
         <p> ${product.price}.00 </p>
-        <p>  Description </p>
+        <p style={{borderBottomStyle:'solid',borderBottomWidth:'1px'}} > <big> Description </big></p>
         
-        <p> {product.description} </p>
+        <p style={{textAlign:'center'}} > {product.description} </p>
 
         <button  className={Styles.cart} onClick={
           () => onAdd(product, qty)}>

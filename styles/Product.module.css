@@ -48,9 +48,12 @@
 {
     .container{
         display: flex;
+        justify-content: center;
+        padding: 0px;
+        padding-bottom: 20%;
         flex-wrap: wrap;
+        grid-gap: 0px;
         
-        /* margin: 0px; */
     }
     .img{
         width: 307.5px;
@@ -60,11 +63,24 @@
         padding-left:0px;
     }
     .text{
-        width: 100%;
+        width: 75%;
         padding-right: 0px;
         /* padding-left: 40px; */
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
+    .cart{
+        margin: auto;
+        margin-top: 10%;
+    }
+    .buynow{
+        margin: auto;
+        margin-top: 5%;
+    }
+    .heading1{
+        text-align: center;
+    }
+   
 }
