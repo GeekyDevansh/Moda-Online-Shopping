@@ -61,6 +61,13 @@ position: relative;
     font-weight: 600;
     font-size: 1.25em;
 }
+.text2{
+    align-self: center;
+    padding: 0 6.25em 6.25em 6.25em;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    font-size: 1.25em;
+}
 .image{
         padding: 6.25em 0em 0em 10em;
    
@@ -160,5 +167,9 @@ position: relative;
      }
      .text1{
         font-size: 15px;
+    }
+    .text2{
+        font-size: 15px;
+        padding-bottom: 50%;
     }
 }

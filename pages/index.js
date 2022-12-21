@@ -155,7 +155,7 @@ const Index = ({ products }) => {
           )}
         </div>
         <div
-          className={Styles.text}
+          className={Styles.text2}
           data-aos="fade-up"
           data-aos-duration="1000"
         >
