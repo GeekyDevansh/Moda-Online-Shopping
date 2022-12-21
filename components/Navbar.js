@@ -29,25 +29,25 @@ const Navbar = () => {
 
 
     <ul className={Styles.ul} >
-        <li className={Styles.links}> 
+        <li className={Styles.links} style={{borderBottomStyle: router.pathname=='/products' ? 'solid' : 'none',borderBottomWidth: router.pathname=='/products' ? '2px' : '0px',paddingBottom: router.pathname=='/products' ? '2%' : '0%' }} > 
         <Link href='/products' > 
-        <a style={{borderBottomStyle: router.pathname=='/products' ? 'solid' : 'none',borderBottomWidth: router.pathname=='/products' ? '1px' : '0px' }} > SHOP </a> 
+        <a  > SHOP </a> 
         </Link>
         </li>
-        <li className={Styles.links}> 
+        <li className={Styles.links} style={{borderBottomStyle: router.pathname=='/about' ? 'solid' : 'none',borderBottomWidth: router.pathname=='/about' ? '2px' : '0px',paddingBottom: router.pathname=='/about' ? '2%' : '0%'  }} > 
         <Link href='/about' > 
-        <a style={{borderBottomStyle: router.pathname=='/about' ? 'solid' : 'none',borderBottomWidth: router.pathname=='/about' ? '1px' : '0px' }}> ABOUT US </a> 
+        <a > ABOUT US </a> 
         </Link>
         </li>
-        <li className={Styles.links}> 
+        <li className={Styles.links} style={{borderBottomStyle: router.pathname=='/locate' ? 'solid' : 'none',borderBottomWidth: router.pathname=='/locate' ? '2px' : '0px',paddingBottom: router.pathname=='/locate' ? '2%' : '0%' , width:'auto' }} > 
         <Link href='/locate' >
-           <a style={{borderBottomStyle: router.pathname=='/locate' ? 'solid' : 'none',borderBottomWidth: router.pathname=='/locate' ? '1px' : '0px' }}> LOCATE A STORE </a>
+           <a > LOCATE A STORE </a>
             </Link>
         </li>
     </ul>
     </div>
 
-    <div className={Styles.cart}>
+    <div className={Styles.cart} style={{backgroundColor: totalQuantities>0?'lightgray':'unset'}} >
         <Link href="/cart">
 <div className={Styles.bag} >
 

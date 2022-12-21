@@ -22,7 +22,7 @@
     background-color: #caafa8;
     padding: 0.625em 1.563em;
     width: 100%;
-    margin: 0.625em;
+    margin-top: 5%;
     font-family: 'Montserrat',sans-serif;
     font-weight: 900;
 
@@ -34,7 +34,7 @@
     background-color:white ;
     padding: 0.625em 1.563em;
     width: 100%;
-    margin: 0.625em;
+    margin-top: 5%;
     font-family: 'Montserrat',sans-serif;
     font-weight: 900;
 }
@@ -44,6 +44,15 @@
 .text{
     padding-right: 100px;
 }
+.description{
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    padding-bottom: 5px;
+    padding-top: 5%;
+    width: fit-content;
+}
+
+
 @media(max-width:768px)
 {
     .container{
@@ -80,6 +89,16 @@
         margin-top: 5%;
     }
     .heading1{
+        text-align: center;
+    }
+    .description{
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-top-style: none;
+        border-top-width: 0px;
+        padding-top: 0px;
+    }
+    .pdescription{
         text-align: center;
     }
    

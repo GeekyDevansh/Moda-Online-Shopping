@@ -33,16 +33,17 @@
 }
 
 .moda{
-    padding-left: 0.5em;
+    padding-left: 1%;
     font-family: 'Chloe';
     font-size: 3.125em;
     color: white;
     font-weight: 900;
 }
 .cart{
-    padding-right: 1.25em;
-    color: white;
+    padding: 1%;
     cursor: pointer;
+    /* background-color: lightgray; */
+    border-radius: 100%;
 }
 .links:hover{
     font-weight: 100;
@@ -77,9 +78,11 @@
     }
     .link{
         padding: 0;
+        
     }
     .links{
-        padding:0 0 0 15px;
+        margin-left:10%;
+        padding: 0px;
         font-size: 9px;
         font-weight: 900;
     }
@@ -88,7 +91,9 @@
     }
     .cart{
        
-            padding: 0 10px 0 0;
+        /* background-color: lightgray; */
+        padding: 1%;
+        border-radius: 100%;
     }
     .container{
         padding: 15px;
