@@ -8,24 +8,31 @@
 
 .cartitem{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
+    place-items: start;
     padding: 0.625em;
     font-size: 1.25em;
+    color: white;
 }
 .text{
     text-align: center;
+    color: white;
     font-family: 'Chloe';
     font-size: 2.188em;
+    margin: 0px;
 }
 .text3{
     text-align: center;
-    font-family: 'Chloe';
-    font-size: 2.188em;
+    font-family:'Montserrat',sans-serif;
+    font-size: 150%;
     cursor: pointer;
-    margin-top: 6.25em;
+    font-weight: 900;
+    /* padding-top: 6.25em; */
+    color: white;
 }
 .btn{
-    background-color: white;
+    background-color: #caafa8;
+    color: white;
     border: none;
     cursor: pointer;
     padding:15px;
@@ -33,9 +40,31 @@
     font-family: 'Montserrat',sans-serif;
     font-weight: 800;
 }
+.btndel{
+    background-color: #caafa8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:15px;
+    font-size: 1.25em;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 800;
+}
+.btndelsm{
+    background-color: #caafa8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:15px;
+    font-size: 1.25em;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 800;
+    display: none;
+}
 .text1{
     font-weight: 800;
     font-size: 1.125em;
+    color: white;
 }
 .subtotal{
     display: grid;
@@ -44,27 +73,33 @@
     font-size: 1.563em;
     justify-items: center;
     padding-top: 6.25em;
+    color: white;
 }
 .qty{
     font-size: 1em;
+    color: white;
 }
 .btn1{
-    padding: 0.938em 5.625em;
+    padding: 1% 2%;
     font-family: 'Montserrat',sans-serif;
     font-weight: 900;
     border: none;
     cursor: pointer;
-    border-radius: 0.625em;
+    /* border-radius: 0.625em; */
     /* color: #caafa8; */
-    /* background-color: #caafa8; */
+    background-color: white;
+    color: #caafa8;
+    border-style: solid;
+    border-width: 1px;
     font-size: 1.375em;
     /* background-color: white; */
 
 
 }
 .btnc{
-    position: absolute;
-    right: 10%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
     
 }
 .text2{
@@ -73,31 +108,51 @@
     font-weight: 700;
     font-size: 2.188em;
     padding-top: 6.25em;
+    color: white;
 }
 .cross{
     font-family: 'Montserrat',sans-serif;
     border: none;
     background-color: white;
 }
+
 @media(max-width:768px)
 {
     .cartitem{
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        /* justify-content: center; */
+        align-items: center;
         
     }
     .text1{
         font-size: 15px;
+        width: 100%;
 
     }
-    .btn{
-        padding: 10px;
-        font-size: 15px;
+    .text2{
+        font-size: 22px;
+
+    }
+    .text3{
+        font-size: 20px;
+        
+
+    }
+    .btndel{
+        display: none;
+    }
+    .btndelsm{
+        display: inline-block;
+        padding: 0 0 0 3%;
     }
     .btnc{
         right: 1%;
         left: 1%;
+    }
+    .btn{
+        padding: 5%;
     }
     .subtotal{
         font-size: 20px;
